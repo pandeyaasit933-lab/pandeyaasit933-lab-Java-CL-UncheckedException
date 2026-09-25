@@ -1,0 +1,25 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/LabTest.java",
+      "testCases": [
+        {
+          "methodName": "throwUncheckedExceptionTest",
+          "label": "throws an unchecked exception",
+          "description": "Verifies that throwUncheckedException throws an unchecked exception as required."
+        },
+        {
+          "methodName": "causeNumberFormatExceptionTest",
+          "label": "throws NumberFormatException",
+          "description": "Checks that causeNumberFormatException results in a NumberFormatException being thrown."
+        },
+        {
+          "methodName": "causeUncheckedExceptionTest",
+          "label": "throws unchecked exception excluding specific types",
+          "description": "Ensures causeUncheckedException throws an unchecked exception that is not RuntimeException or NumberFormatException."
+        }
+      ]
+    }
+  ]
+}
