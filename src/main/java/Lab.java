@@ -1,3 +1,5 @@
+import javax.management.RuntimeErrorException;
+
 public class Lab {
     /**
      * Java provides a class "RuntimeException" which functions like "Exception", but will not
@@ -14,6 +16,7 @@ public class Lab {
      * TODO: throw a RuntimeException.
      */
     public void throwUncheckedException(){
+        throw new RuntimeException();
 
     }
     /**
@@ -37,7 +40,7 @@ public class Lab {
      * TODO: cause a situation where a NumberFormatException is thrown.
      */
     public void causeNumberFormatException(){
-
+          Integer.parseInt("hello");
     }
 
     /**
@@ -54,6 +57,6 @@ public class Lab {
      * NumberFormatException.
      */
     public void causeUncheckedException(){
-
+        int x =10/0;
     }
 }
